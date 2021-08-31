@@ -1,18 +1,25 @@
 import type { NextPage } from "next";
 
 import Meta from "../components/utils/Meta";
-import { HomeContent, HomeWrapper, MainLine } from "../components/styled/Home";
+import GlobalHeader from "../components/utils/GlobalHeader";
+import {
+  HomePageSection,
+  HomeWrapper,
+  MainLine,
+} from "../components/styled/Home";
+
+import { MENU_ITEMS } from "../constants";
 
 const Home: NextPage = () => {
   return (
     <>
       <Meta />
       <HomeWrapper>
-        <HomeContent>
+        <GlobalHeader menuItems={MENU_ITEMS} selectedMenuItemIndex={0} />
+        <HomePageSection position="right">
           <MainLine>Sayantan Ghosh</MainLine>
-          <MainLine>{"</>"}</MainLine>
-          <MainLine>Frontend Developer</MainLine>
-        </HomeContent>
+          <MainLine>Web Developer</MainLine>
+        </HomePageSection>
       </HomeWrapper>
     </>
   );
