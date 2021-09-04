@@ -6,9 +6,11 @@ import {
   HomePageSection,
   HomeWrapper,
   MainLine,
+  SocialLinks,
+  SocialLink,
 } from "../components/styled/Home";
 
-import { MENU_ITEMS } from "../constants";
+import { MENU_ITEMS, SOCIAL_LINKS } from "../constants";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +21,19 @@ const Home: NextPage = () => {
         <HomePageSection position="right">
           <MainLine>Sayantan Ghosh</MainLine>
           <MainLine>Web Developer</MainLine>
+          <SocialLinks>
+            {SOCIAL_LINKS.map((socialLink, index) => {
+              return (
+                <SocialLink
+                  key={index}
+                  href={socialLink.href}
+                  activeColor={socialLink.activeColor}
+                >
+                  {socialLink.text}
+                </SocialLink>
+              );
+            })}
+          </SocialLinks>
         </HomePageSection>
       </HomeWrapper>
     </>

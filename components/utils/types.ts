@@ -15,3 +15,9 @@ export type GlobalHeaderProps = {
   menuItems: Array<MenuItem>;
   selectedMenuItemIndex: number;
 };
+
+export type SocialLink = {
+  href: string;
+  text: string;
+  activeColor: string;
+};

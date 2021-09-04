@@ -9,11 +9,7 @@ export const HeaderWrapper = styled.div`
 
 HeaderWrapper.displayName = "HeaderWrapper";
 
-export const HeaderMenu = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-`;
+export const HeaderMenu = styled.div``;
 
 HeaderMenu.displayName = "HeaderMenu";
 
@@ -23,7 +19,7 @@ export const MenuItem = styled.div`
   }
 
   &:not(:first-of-type) {
-    margin-left: 10px;
+    margin-top: 3px;
   }
   > div {
     font-size: 0.9rem;

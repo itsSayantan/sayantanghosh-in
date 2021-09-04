@@ -1,4 +1,4 @@
-import { MenuItem } from "../components/utils/types";
+import { MenuItem, SocialLink } from "../components/utils/types";
 import { Constants } from "../types/utils";
 
 export const utils: Constants = {
@@ -10,5 +10,21 @@ export const utils: Constants = {
       "Sayantan, Ghosh, Sayantan Ghosh, itsSayantan, web, frontend, ui, developer, web, development, web development, HTML, CSS, Javascript, Typescript, React, React.js, Node, Node.JS, Github, npm, Bangalore, Bengaluru, India",
   },
 };
-
 export const MENU_ITEMS: Array<MenuItem> = [{ label: "Home", to: "/" }];
+export const SOCIAL_LINKS: Array<SocialLink> = [
+  {
+    href: "https://github.com/itsSayantan",
+    text: "Github",
+    activeColor: "rgb(1,4,9)",
+  },
+  {
+    href: "https://www.linkedin.com/in/itssayantan/",
+    text: "Linkedin",
+    activeColor: "rgb(10, 102, 194)",
+  },
+  {
+    href: "https://twitter.com/itsSayantan",
+    text: "Twitter",
+    activeColor: "rgb(27, 149, 224)",
+  },
+];
