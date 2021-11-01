@@ -21,3 +21,12 @@ export type SocialLink = {
   text: string;
   activeColor: string;
 };
+
+export type ParagraphProps = {
+  maxWidth?: string;
+  mobileMaxWidth?: string;
+};
+
+export type GapProps = {
+  verticalGapInPixels?: number;
+};
