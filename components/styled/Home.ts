@@ -2,16 +2,6 @@ import styled from "styled-components";
 import { CenterStyles } from "./utils";
 import { PageSectionProps } from "../utils/types";
 
-export const HomeWrapper = styled.div`
-  margin: 0 auto;
-  width: 90%;
-  height: 100%;
-  flex-wrap: wrap;
-  ${CenterStyles};
-`;
-
-HomeWrapper.displayName = "HomeWrapper";
-
 export const HomePageSection = styled.section<PageSectionProps>`
   width: 100%;
   height: calc(100vh - 100px);
@@ -19,19 +9,6 @@ export const HomePageSection = styled.section<PageSectionProps>`
 `;
 
 HomePageSection.displayName = "HomePageSection";
-
-export const MainLine = styled.div`
-  width: 100%;
-  font-size: 3rem;
-  font-weight: 300;
-  color: var(--global-text-color);
-
-  @media (min-width: 480px) {
-    font-size: 7rem;
-  }
-`;
-
-MainLine.displayName = "MainLine";
 
 export const SocialLinks = styled.div`
   align-self: center;
