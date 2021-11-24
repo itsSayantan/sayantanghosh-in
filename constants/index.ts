@@ -27,4 +27,9 @@ export const SOCIAL_LINKS: Array<SocialLink> = [
     text: "Twitter",
     activeColor: "rgb(27, 149, 224)",
   },
+  {
+    href: "https://www.npmjs.com/~itssayantan",
+    text: "npm",
+    activeColor: "#cb3837",
+  },
 ];
