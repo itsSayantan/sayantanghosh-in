@@ -25,11 +25,3 @@ export const Gap = styled.div<GapProps>`
 `;
 
 Gap.displayName = "Gap";
-
-export const A = styled.a`
-  font-weight: 500;
-  text-decoration: underline;
-  color: var(--global-anchor-color);
-`;
-
-A.displayName = "A";
